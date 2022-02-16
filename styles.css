@@ -281,3 +281,7 @@ img{
 .hide{
     display: none;
 }
+
+.see{
+    display: inline-block;
+}
