@@ -1,7 +1,7 @@
 :root{
     --negro: #171717;
-    --celeste: red;
-    --violeta: violet;
+    --celeste: #00D6D9;
+    --violeta: #E300FF;
 }
 
 *{
@@ -15,6 +15,7 @@ body{
 }
 
 .card{
+    background-color: rgb(29, 29, 29);
     width: min(90%, 1000px);
     margin-inline: auto;
     margin-top: 1em;
@@ -34,6 +35,54 @@ body{
     font-size: 0.8em;
     padding: 1em;
     line-height: 1.2;
+}
+
+.card__title--bienvenido{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    padding: 1.2em 1.2em 0em 1.2em ;
+    line-height: 1.2;
+}
+
+.card__p{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em 1.2em 1.2em 1.2em;
+    line-height: 1.2;
+}
+
+.card__p--dos{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.center{
+    text-align: center;
+}
+
+.card__nombre{
+    margin: 0.5em 1em 1em 1em;
+    padding: 1em 1em 1em 0.2em;
+    font-size: 1.2em;
+    width: 13em;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.card__nombre:focus{
+    outline: none;
+}
+
+.card__nombre[type="text"]
+{
+    font-family: 'Work Sans', sans-serif;
 }
 
 .card__content{
@@ -73,9 +122,6 @@ img{
     cursor: pointer;
 }
 
-.options:hover, .options:focus{
-    background-color: #414141bd;
-}
 
 .options input{
     display: none;
@@ -92,13 +138,24 @@ img{
     height: 4em;
     border: none;
     border-radius: 10px;
-    background-color: rgb(255, 49, 83);
+    background-color: #00C4FF;
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     color: white;
     letter-spacing: 0.2em;
     cursor: pointer;
+}
 
+.empezar{
+    width: 8em;
+    height: 4em;
+    font-size: 1.2em;
+}
+
+.final{
+    width: 8em;
+    height: 4em;
+    font-size: 1.2em;
 }
 
 .circle{
@@ -124,6 +181,46 @@ img{
     display: none;
 }
 
+.card__p__final{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    padding: 1em 2em 1em 2em;
+    line-height: 1.2em;
+}
+
+.card__btn__section__final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns__finales{
+    margin: 0.5em 1em 0.2em 1em;
+}
+
+.final{
+    width: 9em;
+    height: 4em;
+    font-size: 1.2em;
+}
+
+.bg-btn-download{
+    background-color: var(--violeta);
+}
+
+.color{
+    color: var(--celeste);
+    font-weight: 600;
+}
+
+.link{
+    color: var(--violeta);
+    font-weight: 700;
+}
+
+
 @media (min-height:700px){
     img{
         width: 17em;
@@ -143,7 +240,7 @@ img{
 
     .options{
     
-        margin: 1em;
+        margin: 0.7em;
         border: none;
         text-align: left;
         padding: 1em;
@@ -165,7 +262,7 @@ img{
     }
 
     .circle{
-        border: solid 0.7em var(--violeta);
+        border: solid 0.7em var(--celeste);
         width: 6em;
         height: 6em;
         border-radius: 50%;
@@ -183,17 +280,76 @@ img{
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
         font-size: 2em;
-        color: var(--violeta);
+        color: var(--celeste);
         display: none;
     }
+
+    .card__title--bienvenido{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 2.5em;
+        padding: 1.2em 1.2em 0em 1.2em ;
+        line-height: 1.2;
+    }
+
+    .card__p{
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-size: 1.5em;
+        padding: 0.5em 1.2em 1.2em 1.2em;
+        line-height: 1.2;
+    }
+
+    .card__nombre{
+        margin: 0em 1em 1em 1em;
+        padding: 1em 1em 1em 0.2em;
+        font-size: 1.5em;
+        width: 10em;
+        border: none;
+        border-radius: 0.2em;
+    }
+
+    .empezar{
+    width: 10em;
+    height: 3em;
+    font-size: 1.5em;
+    }
+
+    .card__p__final{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.3em;
+        color: white;
+        padding: 3em 2em 1em 2em;
+        line-height: 1.2em;
+    }
+
+    .card__btn__section__final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btns__finales{
+        margin: 0.5em 1em 0.2em 1em;
+    }
+
+    .final{
+        width: 9em;
+        height: 4em;
+        font-size: 1.2em;
+    }
+
 }
 
-@media (min-width:1000px){
+@media (min-width:769px) and (max-width: 2000px){
 
     .card{
         width: min(90%, 1000px);
         margin-inline: auto;
-        margin-top: 2em;
+        margin-top: 1em;
         padding-bottom: 1em;
         border-radius: 10px;
         box-shadow: 7px 5px 12px 2px rgba(0,0,0,0.36);
@@ -254,7 +410,7 @@ img{
     }
 
     .circle{
-        border: solid 0.7em var(--violeta);
+        border: solid 0.7em var(--celeste);
         width: 6em;
         height: 6em;
         border-radius: 50%;
@@ -271,11 +427,61 @@ img{
         font-family: 'Poppins', sans-serif;
         font-weight: 800;
         font-size: 2em;
-        color: var(--violeta);
+        color: var(--celeste);
         display: block;
     }
 
+    .card__title--bienvenido{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 3em;
+        padding: 1.2em 1.2em 0em 1.2em ;
+        line-height: 1.2;
+    }
 
+    .card__p{
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+        font-size: 1.9em;
+        padding: 1.8em 1.2em 1.2em 1.2em;
+        line-height: 1.2;
+    }
+
+    .card__nombre{
+        margin: 0em 1em 1em 1em;
+        padding: 1em 1em 1em 0.2em;
+        font-size: 1.5em;
+        width: 13em;
+        border: none;
+        border-radius: 0.2em;
+    }
+
+    .empezar{
+    width: 10em;
+    height: 3em;
+    font-size: 1.5em;
+    }
+
+    .card__p__final{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 1.4em;
+        color: white;
+        padding: 3em 3em 1em 3em;
+        line-height: 1.2em;
+    }
+
+    .card__btn__section__final{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btns__finales{
+        margin: 1em;
+    }
+    
 }
 
 .hide{
@@ -284,4 +490,8 @@ img{
 
 .see{
     display: inline-block;
+}
+
+.seleccionado{
+    background-color: var(--violeta);
 }
