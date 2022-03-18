@@ -37,20 +37,29 @@ body{
     line-height: 1.2;
 }
 
+.logo{
+    width: 10em;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0em 0em 0em;
+}
+
 .card__title--bienvenido{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: white;
-    font-size: 2.5em;
-    padding: 1.2em 1.2em 0em 1.2em ;
-    line-height: 1.2;
+    font-size: 2.2em;
+    padding: 0.3em 1.2em 0em 1.2em ;
+    line-height: 1;
 }
 
 .card__p{
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 1em 1.2em 1.2em 1.2em;
     line-height: 1.2;
 }
@@ -284,12 +293,22 @@ img{
         display: none;
     }
 
+
+    .logo{
+        width: 12em;
+        height: 8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 0em 0em 0em;
+    }
+
     .card__title--bienvenido{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         color: white;
         font-size: 2.5em;
-        padding: 1.2em 1.2em 0em 1.2em ;
+        padding: 0.3em 1.2em 0em 1.2em ;
         line-height: 1.2;
     }
 
@@ -431,13 +450,22 @@ img{
         display: block;
     }
 
+    .logo{
+        width: 13em;
+        height: 9em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 0em 0em 0em;
+    }
+
     .card__title--bienvenido{
         text-align: center;
         font-family: 'Poppins', sans-serif;
         color: white;
-        font-size: 3em;
-        padding: 1.2em 1.2em 0em 1.2em ;
-        line-height: 1.2;
+        font-size: 3.3em;
+        padding: 0.2em 1.2em 0em 1.2em ;
+        line-height: 1;
     }
 
     .card__p{
@@ -445,7 +473,7 @@ img{
         font-family: 'Work Sans', sans-serif;
         color: white;
         font-size: 1.9em;
-        padding: 1.8em 1.2em 1.2em 1.2em;
+        padding: 1em 1.2em 1.2em 1.2em;
         line-height: 1.2;
     }
 
